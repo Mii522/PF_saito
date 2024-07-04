@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+dt,
+dd,
+span {
+  background-color: #fffdf3;
+  font-family: "fot-tsukuardgothic-std", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+  "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-feature-settings: "palt";
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.copy ul li {
+  font-size: 24px;
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.pc-nav {
+  margin-right: 50px;
+  text-align: right;
+}
+
+.pc-nav ul li {
+  display: block;
+  flex-direction: column;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.pc-nav ul li a {
+  color: #404648;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.animoBorderLeftRight {
+  cursor: pointer;;
+  display: inline-block;
+  position: relative;
+}
+
+.animoBorderLeftRight::after {
+  background-color: #404648;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform .4s cubic-bezier(.86, 0, .07, 1);;
+  width: 100%;
+}
+
+.animoBorderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.main_logo img {
+  display: block;
+  margin: auto;
+  margin-top: 210px;
+  max-width: 525px;
+}
+
+.insta_logo {
+  margin: 150px 0 0 96%;
+  max-width: 30px;
+}
+
+
+.section_works {
+  position: relative;
+}
+
+.box {
+  background: #404648;
+  border-radius: 20px 0 0 20px;
+  height: 1630px;
+  margin-left: 3%;
+  margin-top: 170px;
+  max-width: 97%;
+}
+
+.circle {
+  background: #68b1ab;
+  border-radius: 50%;
+  height: 40px;
+  left: 7%;
+  position: absolute;
+  top: 70px;
+  width: 40px;
+}
+
+.txt_works {
+  background: #404648;
+  color: #fffdf3;
+  left: 10%;
+  position: absolute;
+  top: 80px;
+  z-index: 100;
+}
+
+.section_works ul li {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+}
+
+.btn_all,
+.btn_website,
+.btn_bunner {
+  background: #404648;
+  border: 2px solid #fffdf3;
+  border-radius: 50px;
+  color: #fffdf3;
+  display: block;
+  max-width: 125px;
+  padding: 15px 40px;
+  position: absolute;
+  right: 24%;
+  text-align: center;
+  top: 80px;
+}
+
+.btn_all {
+  right: 47%;
+}
+
+.btn_website {
+  right: 35%;
+}
+
+.btn_works.reverse:hover {
+  background: #fff;
+  color: #ff701e;
+}
+
+.section_works img {
+  height: 1000px;
+  max-width: 30px;
+  position: absolute;
+  top: 50px;
+  z-index: 100;
+}

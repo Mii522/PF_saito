@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portforio by miyuki saito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'yxu3ftu',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+
+        <div class="header-wrap">
+            <div class="copy">
+                <ul>
+                    <li>hello,</li>
+                    <li>welcome</li>
+                    <li>to my ...</li>
+                </ul>
+            </div>
+
+            <nav class="pc-nav">
+                <ul>
+                    <li class="animoBorderLeftRight"><a href="#home">home</a></li>
+                    <li class="animoBorderLeftRight"><a href="#works">works</a></li>
+                    <li class="animoBorderLeftRight"><a href="#about">about</a></li>
+                    <li class="animoBorderLeftRight"><a href="#connect">connect</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <div class="main_logo"><img src="links/2x/logo_gray@2x.png" alt="メインロゴ"></div>
+    <div class="insta_logo"><img src="links/SVG/insta.svg" alt="インスタロゴ"></div>
+
+    <!-- メイン -->
+    <main>
+
+        <section class="section_works">
+            <div class="box"></div>
+            <div class="circle"></div>
+            <p class="txt_works">works</p>
+            <ul>
+                <li class="btn_all">all</li>
+                <li class="btn_website">website</li>
+                <li class="btn_bunner">bunner</li>
+            </ul>
+            <div class="logo_works"><img src="links/SVG/works_beige.svg" alt="装飾文字works"></div>
+
+        </section>
+
+    </main>
+
+    </header>
+
+    <script>
+        $(function () {
+
+        });
+    </script>
+</body>
+
+</html>
